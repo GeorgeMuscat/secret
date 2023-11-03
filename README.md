@@ -1,6 +1,6 @@
-# example
-An example package demonstrating the structure of a Typst package.
+# Secret
+This package currently provides a very simple method to safely redact information from redered documents. 
 
-Displays the text "This is an example!" when included and exports four functions
-`add`, `sub`, `mul`, and `div` that perform the respective mathematical
-operations on two operands.
+NOTE: Information will not be redacted in the source `.typ` files.
+
+The `redact` function replaces text with a rectangle box. The text is not rendered underneath the box, due to the use of the builtin `hide` function.
